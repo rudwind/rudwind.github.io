@@ -1,0 +1,47 @@
+<div class="page-header-wrapper">
+	<div class="page-header">
+  		<h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+      <div id="google-search" class="pull-right">
+       
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span8">
+    {{ content }}
+    {% if page.comments %}
+      {% include JB/comments %}
+    {% endif %}
+  </div>
+  <div class="span4 sidebar">
+
+    <div class="widget copyright-sec">
+      <h3 class="widget-title"><i class="icon-fixed-width icon-warning-sign" style="width:18px;"></i>版权声明</h3>
+      <div class="widget-content">
+        <p>
+          <center>
+              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" tip="">
+                  <img alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.5/cn/88x31.png">
+              </a>
+          </center>
+          <br />
+          本网站所有博文除非注明，皆为原创，转载请注明出处，标注原文链接。采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" tip="">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+        </p>
+      </div>
+    </div>
+    
+    <div class="widget disqus-comment-sec">
+      <h3 class="widget-title" ><i class="icon-fixed-width icon-file" style="width:18px;"></i>最近发表</h3>
+		<div class="widget-content">
+
+<ul style="margin: 0 0 0 2px;">
+{% for post in site.posts limit:10 %}
+  <li style= "margin: 0.4em 0 0.4em 0em;list-style: none;"><i class="icon-fixed-width icon-file-text" style="width:18px;"></i><a href="{{ post.url }}" title="查看《{{ post.title }}》">{{ post.title }}</a></li><hr style="margin:2px 0;background: rgba(32, 32, 32, 0.5);">
+{% endfor %}
+</ul>
+		</div>
+    </div>
+
+  </div>
+</div>
