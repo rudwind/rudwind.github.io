@@ -1,6 +1,6 @@
 # My Blog
 
-[stannis.github.io](http://stannis.github.io)
+[rudwind.github.io](http://stannis.github.io)
 
 
 Built with [Jekyll-Bootstrap](http://jekyllbootstrap.com/)
