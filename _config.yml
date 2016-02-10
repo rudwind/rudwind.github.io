@@ -10,11 +10,11 @@ safe: true
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : 氓风的博客
+title : RudWind's Blog
 tagline: default
 author :
   name : rudwind
-  email : g10150600@gmail.com
+  email : rudwind@outlook.com
   github : rudwind
   twitter : 
   weibo : 10150600
