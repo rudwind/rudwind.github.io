@@ -18,7 +18,7 @@ tags:
 
 ___
 
-## Headings H1 to H6
+## 标题 H1到H6
 
 # H1 Heading
 
@@ -33,6 +33,8 @@ ___
 ###### H6 Heading
 
 ___
+
+<!--more-->
 
 ## 脚注
 
@@ -49,8 +51,8 @@ ___
 
 ## 列表项
 
-1. 第一项 有序列表使用数字
-* 从第二项开始 可以使用数字也可以使用无序列表符号
+1. 第一项
+2. 第二项
 
 ___
 
@@ -128,21 +130,17 @@ ___
 ![外链图片](https://licensebuttons.net/l/by-nc-sa/2.5/cn/88x31.png)
 
 
-你也可以使用HTML元素来调整图片的显示大小和位置等信息并可以通过点击图片的方式用lightbox显示缩放图片。
+你也可以使用HTML元素来调整图片的显示大小和位置等信息。
 
-```<div class="row">
+```
 <p style="float: left; font-size: 9pt; margin-right:1em;"> 
    <a href="{{ site.baseurl }}/assets/images/icons/weibo.png" data-lightbox="gallery1" data-title="The first image" style="float: left; margin-left: 10%; margin-bottom: 1em;">
    <img src="{{ site.baseurl }}/assets/images/icons/weibo.png">Image#weibo</a>
    <a href="{{ site.baseurl }}/assets/images/icons/instagram.png" data-lightbox="gallery1" data-title="The first image" style="float: left; margin-right: -10%; margin-bottom: 1em;">
    <img src="{{ site.baseurl }}/assets/images/icons/instagram.png">Image#instagram</a></p>
-</div>```
-
+```
 
 ***
-
-
-
 
 [^1]: 脚注1的注解 。
 
